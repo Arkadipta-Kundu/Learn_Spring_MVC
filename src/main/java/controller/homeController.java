@@ -1,6 +1,7 @@
 package controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -12,8 +13,10 @@ public class homeController {
         return "index";
     }
     @RequestMapping("/about")
-    public String about(){
+    public String about(Model model){
         System.out.println("this is about url");
+        model.addAttribute("name_key","Arkadipta Kundu");
+        model.addAttribute("age_key",23);
         return "about";
     }
 }
