@@ -13,8 +13,13 @@
 </head>
 <body>
     <h1>User Details</h1>
-    <p><strong>Name:</strong> ${name}</p>
-    <p><strong>Email:</strong> ${email}</p>
-    <p><strong>Password:</strong> ${password}</p>
+<%--    using normal requestparam--%>
+<%--    <p><strong>Name:</strong> ${name}</p>--%>
+<%--    <p><strong>Email:</strong> ${email}</p>--%>
+<%--    <p><strong>Password:</strong> ${password}</p>--%>
+<%--    using modelattribute --%>
+    <p><strong>Name:</strong> ${user.name}</p>
+    <p><strong>Email:</strong> ${user.email}</p>
+    <p><strong>Password:</strong> ${user.password}</p>
 </body>
 </html>
