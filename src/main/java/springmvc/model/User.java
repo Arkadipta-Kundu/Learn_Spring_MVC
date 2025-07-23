@@ -1,7 +1,13 @@
-package model;
+package springmvc.model;
 
+import jakarta.persistence.*;
+
+@Entity
 public class User {
+
     private String name;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String email;
     private String password;
 
